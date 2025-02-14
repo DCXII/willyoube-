@@ -8,6 +8,11 @@ bigHeart.addEventListener('click', () => {
     `;
 });
 
+function moveNoButton(button) {
+    button.style.position = 'absolute';
+    button.style.top = Math.random() * 80 + '%';
+    button.style.left = Math.random() * 80 + '%';
+}
 function acceptProposal() {
     window.location.href = "message.html";
 }
